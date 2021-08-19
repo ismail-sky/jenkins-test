@@ -8,7 +8,7 @@ pipeline {
         }
         stage('two') {
             steps {
-                sh 'exit 1'   // failure
+                sh 'exit 0'   // failure
             }
         }
     }
