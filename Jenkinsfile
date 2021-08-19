@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('one') {
             steps {
-                sh 'exit 1'
+                sh 'exit 0'
             }
         }
         stage('two') {
@@ -13,7 +13,7 @@ pipeline {
         }
     }
     post {
-        failure {
+        always {
             sh 'exit 0'
         }
     }
