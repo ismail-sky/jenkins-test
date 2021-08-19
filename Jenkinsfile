@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('one') {
             steps {
-                sh 'exit 0'
+                sh 'exit 1'
             }
         }
         stage('two') {
