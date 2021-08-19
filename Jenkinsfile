@@ -14,7 +14,7 @@ pipeline {
     }
     post {
         always {
-            sh 'exit 0'
+            //sh 'exit 0'
             echo 'One way or another, I have finishedwith failure stage'
         }
     }
