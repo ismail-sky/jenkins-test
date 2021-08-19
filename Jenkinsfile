@@ -13,7 +13,7 @@ pipeline {
         }
     }
     post {
-        always {
+        failure {
             sh 'exit 0'
         }
     }
