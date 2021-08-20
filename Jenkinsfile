@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     try {   
-                      sh ''''
+                      sh '''
                       echo 9/0
                       echo $?
                       '''
