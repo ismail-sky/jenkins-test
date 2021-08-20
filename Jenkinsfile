@@ -6,7 +6,7 @@ pipeline {
                 script {
                     try {   
                       sh '''
-                      echo 9/0
+                      echo 0/0
                       echo $?
                       '''
                     }catch(Exception e){
