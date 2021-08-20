@@ -3,7 +3,14 @@ pipeline {
     stages {
         stage('one') {
             steps {
-                sh 'exit 1'
+                script {
+                    try {   
+                      sh 'exit 1'
+                    }catch(e){
+                       error "exception "
+                    }
+                
+                }
             }
         }
         stage('two') {
