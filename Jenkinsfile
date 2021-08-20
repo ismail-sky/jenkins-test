@@ -6,7 +6,7 @@ pipeline {
                 script {
                     try {   
                       sh '''
-                      echo 0/0
+                      echo $((54 / 0))
                       echo $?
                       '''
                     }catch(Exception e){
