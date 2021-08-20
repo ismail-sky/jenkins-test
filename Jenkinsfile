@@ -9,8 +9,8 @@ pipeline {
                       echo 9/0
                       echo $?
                       '''
-                    }catch(e){
-                       error "exception "
+                    }catch(Exception e){
+                       error "exception " 
                     }
                 
                 }
