@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     try {   
-                      sh 'echo 2/4'
+                      sh 'echo 2/0'
                     }catch(e){
                        error "exception "
                     }
