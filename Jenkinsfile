@@ -10,7 +10,7 @@ pipeline {
                       echo $?
                       '''
                     }catch(Exception e){
-                       error "exception " 
+                       error "exception and exit " 
                     }
                 
                 }
