@@ -6,6 +6,7 @@ pipeline {
                 script {
                     try {   
                       sh 'echo 2/0'
+                      sh 'echo $?'
                     }catch(e){
                        error "exception "
                     }
