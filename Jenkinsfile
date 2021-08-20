@@ -5,8 +5,10 @@ pipeline {
             steps {
                 script {
                     try {   
-                      sh 'echo 2/0'
-                      sh 'echo $?'
+                      sh ''''
+                      echo 9/0
+                      echo $?
+                      '''
                     }catch(e){
                        error "exception "
                     }
