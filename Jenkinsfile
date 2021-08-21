@@ -4,14 +4,14 @@ pipeline {
         stage('one') {
             steps {
                 script {
-                    //try {   
+                    try {   
                       sh '''
                       echo $((54 / 0))
                       echo $?
                       '''
-                   // }catch(Exception e){
-                     //  error "exception and exit " 
-                    //}
+                    }catch(Exception e){
+                       error "exception and exit " 
+                    }
                 
                 }
             }
