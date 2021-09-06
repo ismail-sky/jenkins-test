@@ -4,3 +4,7 @@ services:
     image: nginx
     ports:
       - "8000:80"
+  webapp2:
+    image: nginx
+    ports:
+      - "8000:80"
