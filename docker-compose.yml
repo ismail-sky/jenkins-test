@@ -1,6 +1,6 @@
 version: '3'
 services:
   webapp2:
-    image: nginx
+    image: httpd
     ports:
       - "8000:80"
