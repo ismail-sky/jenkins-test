@@ -3,4 +3,4 @@ services:
   webapp1:
     image: nginx
     ports:
-      - "8001:80"
+      - "8008:80"
